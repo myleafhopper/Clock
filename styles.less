@@ -1,0 +1,104 @@
+@color: #96F8FF;
+
+body {
+  background: #333;
+  font-family: 'Poiret One', cursive;
+  color: @color;
+}
+
+#clock {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin: -200px;
+  
+	ul {
+		height: 400px;
+		width: 400px;
+		border-radius: 50%;
+    
+		.hour {
+			height: 380px;
+			font-size: 20px;
+			position: absolute;
+			top: 10px;
+			left: 195px;
+
+			span {
+				display: inline-block;
+			}
+		}
+	}
+  
+  #hour {
+    height: 100%;
+    width: 4px;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    top: 0;
+    
+    &:after {
+      content: "";
+      display: block;
+      positioN: absolute;
+      height: 30%;
+      width: 100%;
+      background: @color;
+      bottom: 50%;
+    }
+  }
+  
+  #minute {
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    top: 0;
+    
+    &:after {
+      content: "";
+      display: block;
+      positioN: absolute;
+      height: 35%;
+      width: 100%;
+      background: @color;
+      bottom: 50%;
+    }
+  }
+  
+  #second {
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    
+    &:after {
+      content: "";
+      display: block;
+      positioN: absolute;
+      height: 40%;
+      width: 100%;
+      background: @color;
+      bottom: 50%;
+    }
+  }
+}
+
+.spin (@index) when (@index > 0){
+	.hr@{index} {
+		transform: rotate(@index*30deg);
+
+		span {
+			transform: rotate(@index*-30deg);
+		}
+	}
+
+	.spin(@index - 1);
+}
+
+.spin(12);

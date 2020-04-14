@@ -1,0 +1,151 @@
+body {
+  background: #333;
+  font-family: 'Poiret One', cursive;
+  color: #96F8FF;
+}
+#clock {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px;
+}
+#clock ul {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+#clock ul .hour {
+  height: 380px;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 195px;
+}
+#clock ul .hour span {
+  display: inline-block;
+}
+#clock #hour {
+  height: 100%;
+  width: 4px;
+  position: absolute;
+  left: 50%;
+  margin-left: -2px;
+  top: 0;
+}
+#clock #hour:after {
+  content: "";
+  display: block;
+  positioN: absolute;
+  height: 30%;
+  width: 100%;
+  background: #96F8FF;
+  bottom: 50%;
+}
+#clock #minute {
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  top: 0;
+}
+#clock #minute:after {
+  content: "";
+  display: block;
+  positioN: absolute;
+  height: 35%;
+  width: 100%;
+  background: #96F8FF;
+  bottom: 50%;
+}
+#clock #second {
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+#clock #second:after {
+  content: "";
+  display: block;
+  positioN: absolute;
+  height: 40%;
+  width: 100%;
+  background: #96F8FF;
+  bottom: 50%;
+}
+.hr12 {
+  transform: rotate(360deg);
+}
+.hr12 span {
+  transform: rotate(-360deg);
+}
+.hr11 {
+  transform: rotate(330deg);
+}
+.hr11 span {
+  transform: rotate(-330deg);
+}
+.hr10 {
+  transform: rotate(300deg);
+}
+.hr10 span {
+  transform: rotate(-300deg);
+}
+.hr9 {
+  transform: rotate(270deg);
+}
+.hr9 span {
+  transform: rotate(-270deg);
+}
+.hr8 {
+  transform: rotate(240deg);
+}
+.hr8 span {
+  transform: rotate(-240deg);
+}
+.hr7 {
+  transform: rotate(210deg);
+}
+.hr7 span {
+  transform: rotate(-210deg);
+}
+.hr6 {
+  transform: rotate(180deg);
+}
+.hr6 span {
+  transform: rotate(-180deg);
+}
+.hr5 {
+  transform: rotate(150deg);
+}
+.hr5 span {
+  transform: rotate(-150deg);
+}
+.hr4 {
+  transform: rotate(120deg);
+}
+.hr4 span {
+  transform: rotate(-120deg);
+}
+.hr3 {
+  transform: rotate(90deg);
+}
+.hr3 span {
+  transform: rotate(-90deg);
+}
+.hr2 {
+  transform: rotate(60deg);
+}
+.hr2 span {
+  transform: rotate(-60deg);
+}
+.hr1 {
+  transform: rotate(30deg);
+}
+.hr1 span {
+  transform: rotate(-30deg);
+}
