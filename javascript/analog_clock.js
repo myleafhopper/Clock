@@ -6,8 +6,6 @@ for (var i = 1; i < 60; i++) {
   dialLines[i].style.transform = "rotate(" + 6 * i + "deg)";
 }
 
-d
-
 function clock() {
   var weekday = new Array(7),
       d = new Date(),

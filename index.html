@@ -14,12 +14,14 @@
 
 </head>
 
-<body onload="startTime()">
+<body>
 
   <h1>World Clock</h1>
 
   <!-- ----------------------------------------------------------- -->
 
+  <select id='citiesDropdown' ></select>
+  <button onclick="getCity()">Get City</button>
   <div id='digitalClock'></div>
 
   <!-- ----------------------------------------------------------- -->
@@ -62,6 +64,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+
+  <script>
+    startTime();
+    getCities();
+  </script>
 </body>
 
 </html>
